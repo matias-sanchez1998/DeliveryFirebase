@@ -12,7 +12,7 @@ import reducer from "./context/reducer";
 const container = document.getElementById('root');
 const root = createRoot(container); 
 root.render(
-  <Router>
+  <Router basename="/DeliveryFirebase">
     <StateProvider initialState={initialState} reducer={reducer}>
 
     <App />
