@@ -11,10 +11,13 @@ import reducer from "./context/reducer";
 const container = document.getElementById('root');
 const root = createRoot(container); 
 root.render(
-  <Router >
-    <StateProvider initialState={initialState} reducer={reducer}>
+  <div>Hola</div>
+  );
+// root.render(
+//   <Router >
+//     <StateProvider initialState={initialState} reducer={reducer}>
 
-    <App />
+//     <App />
 
-    </StateProvider>
-  </Router>);
+//     </StateProvider>
+//   </Router>);
