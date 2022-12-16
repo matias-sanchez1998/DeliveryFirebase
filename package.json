@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
-    "build:deploy": "env-cmd -f .env.local npm run build && firebase deploy -P pedidos-39a0b"
+    "build:deploy": "env-cmd -f .env npm run build && firebase deploy -P pedidos-39a0b"
   },
   "eslintConfig": {
     "extends": [
