@@ -8,7 +8,7 @@ import { actionType } from "./context/reducer";
 
 const App = () => {
   const [{ foodItems }, dispatch] = useStateValue();
-
+  console.log(process.env.REACT_APP_FIREBASE_MAIL1);
   const fetchData = async () => {
     await getAllFoodItems().then((data) => {
       dispatch({

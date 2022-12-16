@@ -25,6 +25,7 @@ jobs:
         uses: SpicyPizza/create-envfile@v1.3
         with:
           envkey_REACT_APP_FIREBASE_MAIL: "${{ secrets.REACT_APP_FIREBASE_MAIL }}"
+          envkey_REACT_APP_FIREBASE_MAIL1: "1234"
           envkey_REACT_APP_FIREBASE_API_KEY: "${{ secrets.REACT_APP_FIREBASE_API_KEY }}"
           envkey_REACT_APP_FIREBASE_APP_ID: "${{ secrets.REACT_APP_FIREBASE_APP_ID}}"
           envkey_REACT_APP_FIREBASE_AUTH_DOMAIN: "${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}"
@@ -32,6 +33,7 @@ jobs:
           envkey_REACT_APP_FIREBASE_MESSAGING_ID: "${{ secrets.REACT_APP_FIREBASE_MESSAGING_ID }}"
           envkey_REACT_APP_FIREBASE_PROJECT_ID: "${{ secrets.REACT_APP_FIREBASE_PROJECT_ID}}"
           envkey_REACT_APP_FIREBASE_STORAGE_BUCCKET: "${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCCKET }}"
+          directory: "../"
 
   build_and_deploy:
     runs-on: ubuntu-latest
