@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:
+  env:
+  CI: false
 
 jobs:
   build:
@@ -40,7 +41,7 @@ jobs:
         with:
           name: build
           path: build
-        env: 
+        env:
           CI: false
   deploy:
     name: Deploy
