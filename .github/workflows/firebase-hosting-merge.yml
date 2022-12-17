@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - main
-  env:
+  workflow_dispatch:
+env:
   CI: false
 
 jobs:
