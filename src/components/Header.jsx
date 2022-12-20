@@ -12,7 +12,6 @@ import { actionType } from "../context/reducer";
 
 
 const Header = () => {
-  console.log(process.env);
 
   const firebaseAuth = getAuth(app);
   const provider = new GoogleAuthProvider();
